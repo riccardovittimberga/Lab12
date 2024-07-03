@@ -12,7 +12,10 @@ class Controller:
         self._listCountry = []
 
     def fillDD(self):
-        pass
+        metodi=self._model.metodi()
+        for m in metodi:
+            self._view.ddmetodo.options.append(ft.dropdown.Option(m))
+        self._view.update_page()
 
 
     def handle_graph(self, e):
