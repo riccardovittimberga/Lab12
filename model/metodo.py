@@ -11,4 +11,4 @@ class Metodo:
         return self.Order_method_code==other.Order_method_code
 
     def __str__(self):
-        return f"{self.Order_method_type}"
+        pass

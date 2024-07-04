@@ -43,7 +43,7 @@ class View(ft.UserControl):
 
 
         self.ddmetodo = ft.Dropdown(label="Metodo")
-        self.btn_cpr = ft.ElevatedButton(text="Calcola Prodotti Redditizi", on_click=self._controller.handle_graph)
+        self.btn_cpr = ft.ElevatedButton(text="Calcola Prodotti Redditizi", on_click=self._controller.handle_redditizi)
 
         row2 = ft.Row([self.ddmetodo,self.btn_cpr],
                       alignment=ft.MainAxisAlignment.CENTER)
